@@ -2,5 +2,10 @@
 
 
 (defn -main [& args]
-  (println "Hello")
-  (println "Working!"))
+
+(defn want [x] 
+  (or 
+    (= 0 (mod x 3)) 
+    (= 0 (mod x 5))))
+
+(println (apply + (filter want (range 1 1000)))))
