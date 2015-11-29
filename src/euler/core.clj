@@ -49,4 +49,15 @@
                               (filter palin
                                       (for [x (range 100 1000) y (range 100 1000)]
                                             (* x y))))))
+
+(defn allgood [x] (every? #(zero? (mod x %1)) (range 1 21)))
+
+(allgood 232792560)
+(take 5 (range))
+
+(defn find-first
+         [f coll]
+         (first (filter f coll)))
+
+(println (str "Solves # 5: ") (find-first allgood (range 1 10000000000)))
 )
