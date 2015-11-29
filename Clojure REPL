@@ -1,0 +1,192 @@
+;; This is a text editor and also a Clojure REPL.  It behaves differently than a typical Clojure REPL. You can type anywhere and modify any of the displayed text. Commands are not sent by typing in the REPL and pressing enter. They are sent through keyboard shortcuts.
+
+ ;; REPL Execution Keybindings
+ ;; Note: These keybindings can be executed from any file and the results will be displayed in this REPL.
+ ;; See the settings for more keybindings.
+
+ ;; cmd+alt+b - execute block. Finds the block of Clojure code your cursor is in and executes that.
+
+ ;; Try it now. Put your cursor inside this block and press cmd+alt+b
+ (+ 2 3)
+
+ ;; cmd+alt+s - Executes the selection. Sends the selected text to the REPL.
+
+ ;; Try it now. Select these three lines and hit cmd + alt + s.
+ (println "hello 1")
+ (println "hello 2")
+ (println "hello 3")
+
+ ;; You can disable this help text in the settings.
+;; Loading REPL...
+Clojure 1.7.0
+user=> CompilerException java.lang.RuntimeException: Unable to resolve symbol: fib in this context, compiling:(/private/var/folders/yv/v84lblns0xg2xd0f17s5k9nc0000gp/T/form-init511299436004531712.clj:1:1)
+user=> #'user/fib
+user=> (1.0 1.0 2.0 3.0 5.0 8.0 13.0 21.0 34.0 55.0 89.0 144.0 233.0 377.0 610.0 987.0 1597.0 2584.0 4181.0 6765.0 10946.0 17711.0 28657.0 46368.0 75025.0 121393.0 196418.0 317811.0 514229.0 832040.0 1346269.0 2178309.0 3524578.0 5702887.0 9227465.0 1.4930352E7 2.4157817E7 3.9088169E7 6.3245986E7 1.02334155E8)
+user=> CompilerException java.lang.RuntimeException: Unable to resolve symbol: want2 in this context, compiling:(/private/var/folders/yv/v84lblns0xg2xd0f17s5k9nc0000gp/T/form-init511299436004531712.clj:6:1)
+user=> CompilerException java.lang.RuntimeException: Unable to resolve symbol: want2 in this context, compiling:(/private/var/folders/yv/v84lblns0xg2xd0f17s5k9nc0000gp/T/form-init511299436004531712.clj:8:1)
+user=> CompilerException java.lang.RuntimeException: Unable to resolve symbol: want2 in this context, compiling:(/private/var/folders/yv/v84lblns0xg2xd0f17s5k9nc0000gp/T/form-init511299436004531712.clj:9:1)
+user=> #'user/want2
+user=> ()
+user=> ()
+user=> This command requires you to select some text.
+nil
+user=> #'user/want2
+user=> (2.0)
+user=> (2.0 8.0 34.0 144.0 610.0 2584.0 10946.0 46368.0 196418.0 832040.0 3524578.0 1.4930352E7 6.3245986E7)
+user=> 4.608359787535031E83
+user=> NumberFormatException Infinite or NaN  java.math.BigDecimal.<init> (BigDecimal.java:895)
+user=> NumberFormatException Infinite or NaN  java.math.BigDecimal.<init> (BigDecimal.java:895)
+user=> (< 1 2
+  )
+
+  true
+user=> CompilerException java.lang.RuntimeException: Unable to resolve symbol: takewhile in this context, compiling:(/private/var/folders/yv/v84lblns0xg2xd0f17s5k9nc0000gp/T/form-init511299436004531712.clj:30:1)
+user=> CompilerException java.lang.RuntimeException: Unable to resolve symbol: lessThan in this context, compiling:(/private/var/folders/yv/v84lblns0xg2xd0f17s5k9nc0000gp/T/form-init511299436004531712.clj:31:1)
+user=> #'user/lessThan
+user=> ()
+user=> ()
+user=> ()
+user=> ()
+user=> ()
+user=> #'user/lessThan
+user=> (1 2 3 4)
+user=> (1.0 1.0 2.0 3.0 5.0 8.0 13.0 21.0 34.0 55.0 89.0 144.0 233.0 377.0 610.0 987.0 1597.0 2584.0 4181.0 6765.0 10946.0 17711.0 28657.0 46368.0 75025.0 121393.0 196418.0 317811.0 514229.0 832040.0 1346269.0 2178309.0 3524578.0)
+user=> (2.0 8.0 34.0 144.0 610.0 2584.0 10946.0 46368.0 196418.0 832040.0 3524578.0)
+user=> 4613732.0
+user=> #'user/num-2
+user=> #'user/num-2
+user=> #object[user$num_2 0x7357a011 "user$num_2@7357a011"]
+user=> #object[user$num_2 0x7357a011 "user$num_2@7357a011"]
+user=> #'user/solve2
+user=> #object[user$solve2 0x732d0d24 "user$solve2@732d0d24"]
+user=> #object[user$solve2 0x732d0d24 "user$solve2@732d0d24"]
+user=> #'user/isdivisor
+user=> [30 3]
+user=> ArityException Wrong number of args (1) passed to: user/isdivisor  clojure.lang.AFn.throwArity (AFn.java:429)
+user=> true
+user=> false
+user=> RuntimeException Invalid token: n/2  clojure.lang.Util.runtimeException (Util.java:221)
+user=> #'user/factors
+user=> ClassCastException clojure.core$num cannot be cast to java.lang.Number  clojure.lang.Numbers.divide (Numbers.java:159)
+user=> #'user/factors
+user=> ClassCastException clojure.core$num cannot be cast to java.lang.Number  clojure.lang.Numbers.divide (Numbers.java:159)
+user=> 1
+user=> #'user/factors
+user=> ClassCastException clojure.core$num cannot be cast to java.lang.Number  clojure.lang.Numbers.divide (Numbers.java:159)
+user=> #'user/factors
+user=> #'user/factors
+user=> ClassCastException clojure.core$num cannot be cast to java.lang.Number  clojure.lang.Numbers.divide (Numbers.java:159)
+user=> #'user/factors
+user=> ClassCastException clojure.core$num cannot be cast to java.lang.Number  clojure.lang.Numbers.divide (Numbers.java:159)
+user=> ClassCastException clojure.core$num cannot be cast to java.lang.Number  clojure.lang.Numbers.divide (Numbers.java:159)
+user=> This command requires you to select some text.
+nil
+user=> #'user/factors
+user=> (1 2)
+user=> (1 2 4 5 10 20 25)
+user=> IllegalArgumentException loop requires an even number of forms in binding vector in user:  clojure.core/loop (core.clj:4401)
+user=> CompilerException java.lang.RuntimeException: Unable to resolve symbol: sum in this context, compiling:(/private/var/folders/yv/v84lblns0xg2xd0f17s5k9nc0000gp/T/form-init511299436004531712.clj:92:1)
+user=> CompilerException java.lang.RuntimeException: Unable to resolve symbol: sum in this context, compiling:(/private/var/folders/yv/v84lblns0xg2xd0f17s5k9nc0000gp/T/form-init511299436004531712.clj:93:1)
+user=> CompilerException java.lang.RuntimeException: Unable to resolve symbol: recur in this context, compiling:(/private/var/folders/yv/v84lblns0xg2xd0f17s5k9nc0000gp/T/form-init511299436004531712.clj:94:1)
+user=> ClassCastException java.lang.Long cannot be cast to clojure.lang.IFn  user/eval312 (form-init511299436004531712.clj:98)
+user=> ClassCastException java.lang.Long cannot be cast to clojure.lang.IFn  user/eval317 (form-init511299436004531712.clj:102)
+user=> This command requires you to select some text.
+nil
+user=> ClassCastException java.lang.Long cannot be cast to clojure.lang.IFn  user/eval324 (form-init511299436004531712.clj:107)
+user=> ClassCastException java.lang.Long cannot be cast to clojure.lang.IFn  user/eval329 (form-init511299436004531712.clj:111)
+user=> 55
+user=> (1 2 3 4 5 6 7 8 9)
+user=> (1)
+user=> (1)
+user=> (3)
+user=> (2 4 6 8)
+user=>
+;; This is a text editor and also a Clojure REPL.  It behaves differently than a typical Clojure REPL. You can type anywhere and modify any of the displayed text. Commands are not sent by typing in the REPL and pressing enter. They are sent through keyboard shortcuts.
+
+ ;; REPL Execution Keybindings
+ ;; Note: These keybindings can be executed from any file and the results will be displayed in this REPL.
+ ;; See the settings for more keybindings.
+
+ ;; cmd+alt+b - execute block. Finds the block of Clojure code your cursor is in and executes that.
+
+ ;; Try it now. Put your cursor inside this block and press cmd+alt+b
+ (+ 2 3)
+
+ ;; cmd+alt+s - Executes the selection. Sends the selected text to the REPL.
+
+ ;; Try it now. Select these three lines and hit cmd + alt + s.
+ (println "hello 1")
+ (println "hello 2")
+ (println "hello 3")
+
+ ;; You can disable this help text in the settings.
+;; Loading REPL...
+Clojure 1.7.0
+user=> #'user/modzero?
+user=> false
+user=> true
+user=> #'user/modzero?
+user=> ClassCastException java.lang.Long cannot be cast to clojure.lang.IFn  user/modzero? (form-init7514906955587185507.clj:4)
+user=> #'user/modzero?
+user=> This command requires you to select some text.
+nil
+user=> #'user/modzero?
+user=> true
+user=> true
+user=> CompilerException java.lang.RuntimeException: Unable to resolve symbol: modu in this context, compiling:(/private/var/folders/yv/v84lblns0xg2xd0f17s5k9nc0000gp/T/form-init7514906955587185507.clj:11:1)
+user=> #'user/modzero?
+user=> false
+user=> false
+user=> true
+user=> ArityException Wrong number of args (1) passed to: user/modzero?  clojure.lang.AFn.throwArity (AFn.java:429)
+user=> ClassCastException clojure.lang.PersistentVector cannot be cast to java.lang.Number  clojure.lang.Numbers.remainder (Numbers.java:173)
+user=> #'user/scopetest
+user=> #object[user$scopetest 0x48c76607 "user$scopetest@48c76607"]
+user=> RuntimeException Invalid token: x/2  clojure.lang.Util.runtimeException (Util.java:221)
+user=> CompilerException java.lang.RuntimeException: Unable to resolve symbol: return in this context, compiling:(/private/var/folders/yv/v84lblns0xg2xd0f17s5k9nc0000gp/T/form-init7514906955587185507.clj:61:1)
+user=> HI
+nil
+user=> #'user/scopetest
+user=> HI
+yo
+nil
+user=> #'user/somefilter
+user=> ArityException Wrong number of args (1) passed to: user/somefilter  clojure.lang.AFn.throwArity (AFn.java:429)
+user=> ClassCastException java.lang.Long cannot be cast to clojure.lang.IFn  user/somefilter (form-init7514906955587185507.clj:65)
+user=> #'user/somefilter
+user=> ArityException Wrong number of args (0) passed to: user/somefilter/fn--145  clojure.lang.AFn.throwArity (AFn.java:429)
+user=> #'user/somefilter
+user=> ClassCastException java.lang.Long cannot be cast to clojure.lang.IFn  user/somefilter (form-init7514906955587185507.clj:70)
+user=> #'user/somefilter
+user=> (1)
+user=> (1)
+user=> This command requires you to select some text.
+nil
+user=> #'user/somefilter
+user=> (1)
+user=> (2)
+user=> RuntimeException Invalid token: x/2  clojure.lang.Util.runtimeException (Util.java:221)
+user=> (1 2 3 4 5 6 7 8 9)
+user=> RuntimeException Unmatched delimiter: ]  clojure.lang.Util.runtimeException (Util.java:221)
+user=> #'user/primes-to
+user=> ()
+user=> #'user/primes-to
+user=> (1)
+user=> CompilerException java.lang.RuntimeException: Unable to resolve symbol: factors in this context, compiling:(/private/var/folders/yv/v84lblns0xg2xd0f17s5k9nc0000gp/T/form-init7514906955587185507.clj:114:1)
+user=> CompilerException java.lang.RuntimeException: Unable to resolve symbol: factors in this context, compiling:(/private/var/folders/yv/v84lblns0xg2xd0f17s5k9nc0000gp/T/form-init7514906955587185507.clj:128:1) 
+user=> CompilerException java.lang.RuntimeException: Unable to resolve symbol: factors in this context, compiling:(/private/var/folders/yv/v84lblns0xg2xd0f17s5k9nc0000gp/T/form-init7514906955587185507.clj:142:1)
+user=> #'user/primes-to
+user=> #object[clojure.core$filter$fn__4576 0x7922d892 "clojure.core$filter$fn__4576@7922d892"]
+user=> #'user/primes-to
+user=> (1)
+user=> #'user/primes-to
+user=> (1)
+user=> (1)
+user=> #'user/primes-to
+user=> (1 2 3)
+user=> (1 2 3 5 7)
+user=> (1 2 3 5 7 11 13 17 19 23 29 31 37 41 43 47)
+user=> #'user/primes-to
+user=> (1 2 3 5 7 11 13 17 19 23 29 31 37 41 43 47 53 59 61 67 71 73 79 83 89 97)
+user=> #'user/pfactors
+user=>
