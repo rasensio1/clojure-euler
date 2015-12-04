@@ -60,4 +60,14 @@
          (first (filter f coll)))
 
 (println (str "Solves # 5: ") (find-first allgood (range 1 10000000000)))
+
+
+(.pow (BigInteger. "2") 10)
+
+(defn squareSums [x] (.pow (BigInteger. (str (apply + (range 1 (inc x))))) 2 ))
+(defn sumSquares [x] (reduce + (map #(* %1 %1)
+                                  (range 1 (inc x)))))
+
+(println (str "Solves # 5: ") (- (squareSums 100) (sumSquares 100)))
+
 )
